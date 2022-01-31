@@ -1,0 +1,181 @@
+@font-face {
+  font-family: df-cocogoose;
+  src: url(./cocogoose/letterpress/cocogoose-letterpress.regular.ttf);
+}
+@font-face {
+  font-family: df-lato;
+  src: url(./lato/Lato-Regular.ttf);
+}
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+.border-gray {
+  border: 1px solid #d3d3d3;
+}
+
+body {
+  font-family: df-lato, sans-serif;
+  text-align: center;
+}
+
+section {
+  padding: 2rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: df-cocogoose, sans-serif;
+  color: #f65441;
+  text-align: center;
+}
+h1 span {
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-family: df-cocogoose, sans-serif;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 500;
+  font-family: df-lato, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.h2-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome img {
+  max-width: 100px;
+  position: absolute;
+}
+#welcome img:nth-child(3) {
+  right: 1rem;
+  bottom: 3rem;
+}
+#welcome img:nth-child(2) {
+  left: 1rem;
+  top: 3rem;
+}
+
+#menu {
+  color: #d3d3d3;
+  background-color: #272a31;
+}
+#menu .card-menu {
+  font-family: df-lato, sans-serif;
+  background-color: #373a41;
+  padding: 1rem 1.3rem;
+}
+#menu .card-menu h3 {
+  color: #f65441;
+}
+#menu .card-menu p {
+  color: white;
+  margin: 0;
+}
+
+.menu-icons {
+  height: 50px;
+}
+
+.line {
+  border-top: 2px solid #f65441;
+  width: 50px;
+  align-self: center;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.line-gray {
+  border-color: #d3d3d3;
+  align-self: start;
+  width: 30px;
+  margin: 0.7rem 0;
+}
+
+.btn-orange {
+  align-self: center;
+  background-color: #f65441;
+  color: #d3d3d3;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.text-orange {
+  color: #f65441;
+}
+
+.photo-team {
+  height: 95px;
+  align-self: start;
+}
+
+.team-bg {
+  position: absolute;
+  width: 80px;
+  right: 2rem;
+  top: 5rem;
+  display: none;
+}
+
+.more {
+  border: 1px solid #d3d3d3;
+}
+.more span {
+  padding: 0.2rem;
+  transform: rotate(45deg);
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.arrow {
+  border-bottom: 3px solid #f65441;
+  border-right: 3px solid #f65441;
+}
+
+.copyright {
+  background-color: white;
+  min-height: auto;
+}
+
+.img-reddish {
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 95px;
+  z-index: 1;
+  top: 0;
+  opacity: 40%;
+  pointer-events: none;
+}
+.img-reddish:hover {
+  opacity: 0;
+}
+
+.img-sepia {
+  position: relative;
+  filter: sepia(100%);
+  cursor: pointer;
+  z-index: 0;
+}
+.img-sepia:hover {
+  filter: none;
+  transform: scale(2);
+  transform-origin: left;
+  z-index: 2 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

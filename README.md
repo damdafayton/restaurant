@@ -1,26 +1,21 @@
-![](images.jfif)
+![](./images/ss-m.jpg)
 
 
-# Hello Project
-
-> Title
-
-This project has no features.
-
+> BlaBla Restaurant Web Page
 
 ## Built With
 
-- HTML, CSS
+- HTML, SCSS, JS
 
 
 ## Live Demo
 
-[Live Demo Link](https://)
+[Live Demo Link](https://damdafayton.github.io/restaurant/)
 
 
 ## Getting Started
 
-Download and click `index.html` if you really want to run this page.
+Download and click `index.html`.
 
 
 
@@ -42,11 +37,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-
-## Acknowledgments
-
-- Hat tip to all developers.
 
 
 ## 📝 License

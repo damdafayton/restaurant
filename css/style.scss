@@ -1,0 +1,201 @@
+$df-r-black: #272a31;
+$df-r-orange: #f65441;
+$df-r-gray: #d3d3d3;
+$df-r-card: #373a41;
+$team-img-height: 95px;
+
+@font-face {
+  font-family: df-cocogoose;
+  src: url(./cocogoose/letterpress/cocogoose-letterpress.regular.ttf);
+}
+
+@font-face {
+  font-family: df-lato;
+  src: url(./lato/Lato-Regular.ttf);
+}
+
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+.border-gray {
+  border: 1px solid $df-r-gray;
+}
+
+body {
+  font-family: df-lato, sans-serif;
+  text-align: center;
+}
+
+section {
+  padding: 2rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: df-cocogoose, sans-serif;
+  color: $df-r-orange;
+  text-align: center;
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+h2 {
+  font-family: df-cocogoose, sans-serif;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 500;
+  font-family: df-lato, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.h2-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome {
+  img {
+    max-width: 100px;
+    position: absolute;
+
+    &:nth-child(3) {
+      right: 1rem;
+      bottom: 3rem;
+    }
+
+    &:nth-child(2) {
+      left: 1rem;
+      top: 3rem;
+    }
+  }
+}
+
+#menu {
+  color: $df-r-gray;
+  background-color: $df-r-black;
+
+  .card-menu {
+    font-family: df-lato, sans-serif;
+    background-color: $df-r-card;
+    padding: 1rem 1.3rem;
+
+    h3 {
+      color: $df-r-orange;
+    }
+
+    p {
+      color: white;
+      margin: 0;
+    }
+  }
+}
+
+.menu-icons {
+  height: 50px;
+}
+
+.line {
+  border-top: 2px solid $df-r-orange;
+  width: 50px;
+  align-self: center;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.line-gray {
+  border-color: $df-r-gray;
+  align-self: start;
+  width: 30px;
+  margin: 0.7rem 0;
+}
+
+.btn-orange {
+  align-self: center;
+  background-color: $df-r-orange;
+  color: $df-r-gray;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.text-orange {
+  color: $df-r-orange;
+}
+
+.photo-team {
+  height: $team-img-height;
+  // padding: 0.8rem;
+  align-self: start;
+}
+
+.team-bg {
+  position: absolute;
+  width: 80px;
+  right: 2rem;
+  top: 5rem;
+  display: none;
+}
+
+.more {
+  border: 1px solid $df-r-gray;
+
+  span {
+    padding: 0.2rem;
+    transform: rotate(45deg);
+    display: inline-block;
+    vertical-align: text-top;
+  }
+}
+
+$arrow-border: 3px solid $df-r-orange;
+
+.arrow {
+  border-bottom: $arrow-border;
+  border-right: $arrow-border;
+}
+
+.copyright {
+  background-color: white;
+  min-height: auto;
+}
+
+.img-reddish {
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: $team-img-height;
+  z-index: 1;
+  top: 0;
+  opacity: 40%;
+  pointer-events: none;
+
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.img-sepia {
+  position: relative;
+  filter: sepia(100%);
+  cursor: pointer;
+  z-index: 0;
+
+  &:hover {
+    filter: none;
+    transform: scale(2);
+    transform-origin: left;
+    z-index: 2 !important;
+  }
+}
