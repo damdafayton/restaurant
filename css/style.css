@@ -2,12 +2,10 @@
   font-family: df-cocogoose;
   src: url(./cocogoose/letterpress/cocogoose-letterpress.regular.ttf);
 }
-
 @font-face {
   font-family: df-lato;
   src: url(./lato/Lato-Regular.ttf);
 }
-
 .bg-gray {
   background-color: #f7f7f7;
 }
@@ -33,7 +31,6 @@ h1 {
   color: #f65441;
   text-align: center;
 }
-
 h1 span {
   font-size: 0.9rem;
 }
@@ -64,12 +61,10 @@ a {
   max-width: 100px;
   position: absolute;
 }
-
 #welcome img:nth-child(3) {
   right: 1rem;
   bottom: 3rem;
 }
-
 #welcome img:nth-child(2) {
   left: 1rem;
   top: 3rem;
@@ -79,17 +74,14 @@ a {
   color: #d3d3d3;
   background-color: #272a31;
 }
-
 #menu .card-menu {
   font-family: df-lato, sans-serif;
   background-color: #373a41;
   padding: 1rem 1.3rem;
 }
-
 #menu .card-menu h3 {
   color: #f65441;
 }
-
 #menu .card-menu p {
   color: white;
   margin: 0;
@@ -142,7 +134,6 @@ a {
 .more {
   border: 1px solid #d3d3d3;
 }
-
 .more span {
   padding: 0.2rem;
   transform: rotate(45deg);
@@ -170,21 +161,23 @@ a {
   opacity: 40%;
   pointer-events: none;
 }
-
 .img-reddish:hover {
   opacity: 0;
 }
 
 .img-sepia {
+  transition: transform 0s;
   position: relative;
   filter: sepia(100%);
   cursor: pointer;
   z-index: 0;
 }
-
 .img-sepia:hover {
+  transition: transform 1s;
   filter: none;
   transform: scale(2);
   transform-origin: left;
   z-index: 2 !important;
 }
+
+/*# sourceMappingURL=style.css.map */

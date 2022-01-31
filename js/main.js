@@ -38,7 +38,7 @@ Object.keys(teamObj).forEach((member) => {
   div.classList.add('card-team', 'd-flex', 'gap-4');
   team.appendChild(div);
 });
-if (document.location.pathname.includes('index,html')) {
+if (document.location.pathname.includes('index.html')) {
   team.innerHTML += more;
 } else if (document.location.pathname.includes('about')) {
   const cardTeam = document.querySelectorAll('.card-team');

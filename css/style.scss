@@ -187,12 +187,14 @@ $arrow-border: 3px solid $df-r-orange;
 }
 
 .img-sepia {
+  transition: transform 0s;
   position: relative;
   filter: sepia(100%);
   cursor: pointer;
   z-index: 0;
 
   &:hover {
+    transition: transform 1s;
     filter: none;
     transform: scale(2);
     transform-origin: left;
