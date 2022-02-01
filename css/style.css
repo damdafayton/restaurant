@@ -2,10 +2,12 @@
   font-family: df-cocogoose;
   src: url(./cocogoose/letterpress/cocogoose-letterpress.regular.ttf);
 }
+
 @font-face {
   font-family: df-lato;
   src: url(./lato/Lato-Regular.ttf);
 }
+
 .bg-gray {
   background-color: #f7f7f7;
 }
@@ -32,6 +34,7 @@ h1 {
   color: #f65441;
   text-align: center;
 }
+
 h1 span {
   font-size: 0.9rem;
 }
@@ -59,10 +62,12 @@ header {
   background-color: white;
   padding: 0.7rem;
 }
+
 header #navbar-topline,
 header > img {
   display: none;
 }
+
 header #burger-container {
   z-index: 130;
   position: relative;
@@ -70,25 +75,31 @@ header #burger-container {
   margin-left: 0.7rem;
   cursor: pointer;
 }
+
 header #burger-container .burger-line {
   border-bottom: 4px solid #272a31;
   margin-bottom: 0.24rem;
   transition: all 0.5s;
 }
+
 header #burger-container .open {
   transition: transform 1s;
 }
+
 header #burger-container .open:nth-child(1) {
   transform: rotate(45deg);
   transform-origin: left;
 }
+
 header #burger-container .open:nth-child(2) {
   opacity: 0;
 }
+
 header #burger-container .open:nth-child(3) {
   transform: rotate(-45deg);
   transform-origin: left;
 }
+
 header nav {
   margin-left: 120vw;
   background-color: white;
@@ -103,12 +114,14 @@ header nav {
   flex-direction: column;
   display: flex;
 }
+
 header nav a {
   font-weight: 600;
   font-size: 2rem;
   white-space: nowrap;
   margin-bottom: 1rem;
 }
+
 header .navbar-show {
   transition: all 0.5s;
   margin-left: 0;
@@ -133,10 +146,12 @@ a:hover {
   max-width: 150px;
   position: absolute;
 }
+
 #welcome img:nth-child(3) {
   left: 1rem;
   bottom: 9rem;
 }
+
 #welcome img:nth-child(4) {
   top: 9rem;
   right: 1rem;
@@ -146,15 +161,18 @@ a:hover {
   color: #d3d3d3;
   background-color: #272a31;
 }
+
 #menu .card-menu {
   font-family: df-lato, sans-serif;
   background-color: #373a41;
   padding: 1rem 1.3rem;
   height: 100%;
 }
+
 #menu .card-menu h3 {
   color: #f65441;
 }
+
 #menu .card-menu p {
   color: white;
   margin: 0;
@@ -209,12 +227,14 @@ a:hover {
   margin: 1.5rem;
   cursor: pointer;
 }
+
 .more span {
   padding: 0.2rem;
   transform: rotate(45deg);
   display: inline-block;
   vertical-align: text-top;
 }
+
 .more:hover {
   background-color: #d3d3d3;
 }
@@ -239,6 +259,7 @@ a:hover {
   opacity: 40%;
   pointer-events: none;
 }
+
 .img-reddish:hover {
   opacity: 0;
 }
@@ -250,6 +271,7 @@ a:hover {
   cursor: pointer;
   z-index: 0;
 }
+
 .img-sepia:hover {
   transition: transform 1s;
   filter: none;
@@ -268,7 +290,8 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar-padding-end, header #navbar-topline {
+  .navbar-padding-end,
+  header #navbar-topline {
     padding-right: 1rem;
   }
 
@@ -282,14 +305,17 @@ a:hover {
     padding: 0;
     flex-wrap: wrap;
   }
+
   header #burger-container {
     display: none;
   }
+
   header > img {
     display: inline;
     width: 70px;
     margin: 0.1rem 0.5rem;
   }
+
   header #navbar-topline {
     display: block;
     background-color: #272a31;
@@ -297,10 +323,12 @@ a:hover {
     width: 100%;
     text-align: end;
   }
+
   header #navbar-topline img {
     height: 20px;
     width: auto;
   }
+
   header nav {
     position: static;
     transition: all 0s !important;
@@ -309,10 +337,9 @@ a:hover {
     flex-direction: row;
     padding: 1rem;
   }
+
   header nav a {
     margin: 0 1rem;
     font-size: 1rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
