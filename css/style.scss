@@ -4,6 +4,7 @@ $df-r-gray: #d3d3d3;
 $df-r-card: #373a41;
 $team-img-height: 95px;
 $team-img-width: 140px;
+$df-bg-gray: #ececec;
 
 @font-face {
     font-family: df-cocogoose;
@@ -26,6 +27,7 @@ $team-img-width: 140px;
 body {
     font-family: df-lato, sans-serif;
     text-align: center;
+    background-color: $df-bg-gray;
 }
 
 section {
@@ -57,8 +59,12 @@ p {
 }
 
 a {
-    color: inherit;
+    color: $df-r-card;
     text-decoration: inherit;
+
+    &:hover {
+        color: $df-r-orange;
+    }
 }
 
 header {
@@ -67,6 +73,12 @@ header {
     width: 100%;
     background-color: white;
     padding: 0.7rem;
+
+    #navbar-topline,
+    > img {
+        display: none;
+    }
+
     #burger-container {
         z-index: 130;
         position: relative;
@@ -97,20 +109,19 @@ header {
         }
     }
     nav {
-        transition: all 0.5s;
-        z-index: 110;
-        // display: none;
+        margin-left: 120vw;
+        background-color: white;
         position: absolute;
         top: 0;
         height: 100vh;
         left: 0;
         right: 0;
-        background-color: white;
+        z-index: 110;
+        // display: none;
         align-items: center;
-        display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-left: 120vw;
+        display: flex;
         a {
             font-weight: 600;
             font-size: 2rem;
@@ -118,8 +129,10 @@ header {
             margin-bottom: 1rem;
         }
     }
-    .ms-0 {
-        transition: all 1s;
+    .navbar-show {
+        transition: all 0.5s;
+        margin-left: 0;
+        // display: flex;
     }
 }
 
@@ -140,13 +153,13 @@ footer > img {
         position: absolute;
 
         &:nth-child(3) {
-            right: 1rem;
-            bottom: 3rem;
+            left: 1rem;
+            top: -9rem;
         }
 
-        &:nth-child(2) {
-            left: 1rem;
-            top: 4rem;
+        &:nth-child(4) {
+            bottom: -11rem;
+            right: 1rem;
         }
     }
 }
@@ -229,6 +242,10 @@ footer > img {
         display: inline-block;
         vertical-align: text-top;
     }
+
+    &:hover {
+        background-color: $df-r-gray;
+    }
 }
 
 $arrow-border: 3px solid $df-r-orange;
@@ -283,8 +300,56 @@ $arrow-border: 3px solid $df-r-orange;
     filter: contrast(2);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
+    .navbar-padding-end {
+        padding-right: 1rem;
+    }
+
     section:not(.vh100) {
         min-height: auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-wrap: wrap;
+
+        #burger-container {
+            display: none;
+        }
+
+        #navbar-topline {
+            display: block;
+            background-color: $df-r-black;
+            color: white;
+            width: 100%;
+            text-align: end;
+            @extend .navbar-padding-end;
+            img {
+                height: 20px;
+                width: auto;
+            }
+        }
+
+        > img {
+            display: inline;
+            width: 70px;
+            margin: 0.1rem 0.5rem;
+        }
+
+        nav {
+            position: static;
+            transition: all 0s !important;
+            margin-left: 0;
+            height: auto;
+            flex-direction: row;
+            padding: 1rem;
+
+            a {
+                margin: 0 1rem;
+                font-size: 1rem;
+            }
+        }
     }
 }

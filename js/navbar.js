@@ -1,6 +1,12 @@
 // Add navbar
 const body = document.querySelector('body')
 body.firstElementChild.innerHTML = `
+        <div id="navbar-topline">
+        <img src="./images/fb-w.png">
+        <img src="./images/instagram-w.png">
+        <img src="./images/twitter-w.png">
+        </div>
+        <img src="./images/logo-food.png" alt="logo">
         <div id="burger-container">
             <div class="burger-line"></div>
             <div class="burger-line"></div>
@@ -24,7 +30,7 @@ const nav = document.querySelector('nav')
 const burgerLines = document.querySelectorAll('.burger-line')
 
 function toggleNavBar() {
-    nav.classList.toggle('ms-0')
+    nav.classList.toggle('navbar-show')
     burgerLines.forEach(line => {
         line.classList.toggle('open')
     })
