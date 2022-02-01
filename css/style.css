@@ -51,9 +51,6 @@ a {
   color: #373a41;
   text-decoration: inherit;
 }
-a:hover {
-  color: #f65441;
-}
 
 header {
   z-index: 120;
@@ -120,6 +117,10 @@ header .navbar-show {
 footer > img {
   width: 100px;
   margin-right: 2rem;
+}
+
+a:hover {
+  color: #f65441;
 }
 
 .h2-wrapper {
@@ -284,6 +285,11 @@ footer > img {
   header #burger-container {
     display: none;
   }
+  header > img {
+    display: inline;
+    width: 70px;
+    margin: 0.1rem 0.5rem;
+  }
   header #navbar-topline {
     display: block;
     background-color: #272a31;
@@ -294,11 +300,6 @@ footer > img {
   header #navbar-topline img {
     height: 20px;
     width: auto;
-  }
-  header > img {
-    display: inline;
-    width: 70px;
-    margin: 0.1rem 0.5rem;
   }
   header nav {
     position: static;

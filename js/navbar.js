@@ -1,5 +1,5 @@
 // Add navbar
-const body = document.querySelector('body')
+const body = document.querySelector('body');
 body.firstElementChild.innerHTML = `
         <div id="navbar-topline">
         <img src="./images/fb-w.png">
@@ -16,24 +16,24 @@ body.firstElementChild.innerHTML = `
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
         </nav>
-        `
+        `;
 
 // Set page top padding
-const navBarY = body.firstElementChild.clientHeight
-const padding = navBarY + 40
-const firstSection = document.querySelector('section')
-firstSection.style.paddingTop = padding + 'px'
+const navBarY = body.firstElementChild.clientHeight;
+const padding = navBarY + 40;
+const firstSection = document.querySelector('section');
+firstSection.style.paddingTop = `${padding}px`;
 
 // Burger button controls
-const burgerContainer = document.querySelector('#burger-container')
-const nav = document.querySelector('nav')
-const burgerLines = document.querySelectorAll('.burger-line')
+const burgerContainer = document.querySelector('#burger-container');
+const nav = document.querySelector('nav');
+const burgerLines = document.querySelectorAll('.burger-line');
 
 function toggleNavBar() {
-    nav.classList.toggle('navbar-show')
-    burgerLines.forEach(line => {
-        line.classList.toggle('open')
-    })
+  nav.classList.toggle('navbar-show');
+  burgerLines.forEach((line) => {
+    line.classList.toggle('open');
+  });
 }
 
-burgerContainer.addEventListener('click', toggleNavBar)
+burgerContainer.addEventListener('click', toggleNavBar);
