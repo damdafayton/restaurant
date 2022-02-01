@@ -11,50 +11,70 @@
 </head>
 
 <body>
-    <section id="welcome" class="container d-flex flex-column justify-content-center position-relative">
-        <h1>
-            <span>Restaurant - Bar - Lounge</span><br>
-            WELCOME TO BLABLA RESTAURANT
-        </h1>
-        <img src=" ./images/PngItem_303341.png" alt="background image">
-        <img src="./images/wine-glass-red-wine-wine-cocktail-champagne-drink-wine-d3d72936183c1a59da94eb28e13d3e17.png"
-            alt="background image 2">
-    </section>
-    <section id="menu" class="container-fluid gap-2">
-        <div class="h2-wrapper">
-            <h2>Menu
-            </h2>
-            <div class="line"></div>
-        </div>
-        <div class="card-menu d-flex align-items-center justify-content-around">
-            <img class="menu-icons" src="./images/lunch-3.png" alt="lunch icon">
-            <h3 class="my-3">Lunch</h3>
-            <p class="col-6">Served from 10:00 am to 4:00 pm</p>
-        </div>
-        <div class="card-menu d-flex align-items-center justify-content-around">
-            <img class="menu-icons" src="./images/dinner-3.png" alt="lunch icon">
-            <h3 class="my-3">Dinner</h3>
-            <p class="col-6">Served from 4:00 pm to 11:00 pm</p>
-        </div>
-        <div class="card-menu d-flex align-items-center justify-content-around">
-            <img class="menu-icons" src="./images/bar-3.png" alt="lunch icon">
-            <h3 class="my-3">Bar</h3>
-            <p class="col-6">Wine, vodka, whiskey</p>
-        </div>
-        <div class="card-menu d-flex align-items-center justify-content-around">
-            <img class="menu-icons" src="./images/hot-3.png" alt="lunch icon">
-            <h3 class="my-3">Hot</h3>
-            <p class="col-6">Coffee, tea</p>
-        </div>
-        <button class="btn btn-orange">Make Reservation</button>
-    </section>
-    <section id="team" class="container gap-4">
-        <a href="about.html" class="h2-wrapper">
-            <h2>Our Team</h2>
-            <div class="line"></div>
-        </a>
-    </section>
+    <header>
+    </header>
+    <main>
+        <section id="welcome" class="vh100 container d-flex flex-column justify-content-center position-relative">
+            <h1>
+                <span>Restaurant - Bar - Lounge</span><br>
+                WELCOME TO BLABLA RESTAURANT
+            </h1>
+            <img src=" ./images/PngItem_303341.png" alt="background image">
+            <img src="./images/wine-glass-red-wine-wine-cocktail-champagne-drink-wine-d3d72936183c1a59da94eb28e13d3e17.png"
+                alt="background image 2">
+        </section>
+        <section id="menu" class="container-fluid px-4">
+            <div class="h2-wrapper">
+                <h2>Menu
+                </h2>
+                <div class="line"></div>
+            </div>
+            <div class="g-2 row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <div
+                        class="card-menu d-flex align-items-center justify-content-around justify-content-sm-start flex-sm-column">
+                        <img class="menu-icons" src="./images/lunch-3.png" alt="lunch icon">
+                        <h3 class="my-3">Lunch</h3>
+                        <p class="col-6 col-sm-12">Served from 10:00 am to 4:00 pm</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="card-menu d-flex align-items-center justify-content-around justify-content-sm-start flex-sm-column">
+                        <img class="menu-icons" src="./images/dinner-3.png" alt="lunch icon">
+                        <h3 class="my-3">Dinner</h3>
+                        <p class="col-6 col-sm-12">Served from 4:00 pm to 11:00 pm</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="card-menu d-flex align-items-center justify-content-around justify-content-sm-start flex-sm-column">
+                        <img class="menu-icons" src="./images/bar-3.png" alt="lunch icon">
+                        <h3 class="my-3">Bar</h3>
+                        <p class="col-6 col-sm-12">Wine, vodka, whiskey</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="card-menu d-flex align-items-center justify-content-around justify-content-sm-start flex-sm-column">
+                        <img class="menu-icons" src="./images/hot-3.png" alt="lunch icon">
+                        <h3 class="my-3">Hot</h3>
+                        <p class="col-6 col-sm-12">Coffee, tea</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-orange">Make Reservation</button>
+        </section>
+        <section id="team" class="container gap-4">
+            <a href="about.html" class="h2-wrapper">
+                <h2>Our Team</h2>
+                <div class="line"></div>
+            </a>
+            <div class="gy-4 gx-4 row row-cols-1 row-cols-md-2 justify-content-center" id="team-members"></div>
+        </section>
+    </main>
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

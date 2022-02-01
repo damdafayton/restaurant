@@ -51,6 +51,69 @@ a {
   text-decoration: inherit;
 }
 
+header {
+  z-index: 120;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 0.7rem;
+}
+header #burger-container {
+  z-index: 130;
+  position: relative;
+  width: 22px;
+  margin-left: 0.7rem;
+  cursor: pointer;
+}
+header #burger-container .burger-line {
+  border-bottom: 4px solid #272a31;
+  margin-bottom: 0.24rem;
+  transition: all 0.5s;
+}
+header #burger-container .open {
+  transition: transform 1s;
+}
+header #burger-container .open:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+header #burger-container .open:nth-child(2) {
+  opacity: 0;
+}
+header #burger-container .open:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: left;
+}
+header nav {
+  transition: all 0.5s;
+  z-index: 110;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 120vw;
+}
+header nav a {
+  font-weight: 600;
+  font-size: 2rem;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+header .ms-0 {
+  transition: all 1s;
+}
+
+footer > img {
+  width: 100px;
+  margin-right: 2rem;
+}
+
 .h2-wrapper {
   justify-content: center;
   display: flex;
@@ -67,7 +130,7 @@ a {
 }
 #welcome img:nth-child(2) {
   left: 1rem;
-  top: 3rem;
+  top: 4rem;
 }
 
 #menu {
@@ -78,6 +141,7 @@ a {
   font-family: df-lato, sans-serif;
   background-color: #373a41;
   padding: 1rem 1.3rem;
+  height: 100%;
 }
 #menu .card-menu h3 {
   color: #f65441;
@@ -96,7 +160,7 @@ a {
   width: 50px;
   align-self: center;
   margin-top: 0.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .line-gray {
@@ -111,7 +175,7 @@ a {
   background-color: #f65441;
   color: #d3d3d3;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 .text-orange {
@@ -119,7 +183,7 @@ a {
 }
 
 .photo-team {
-  height: 95px;
+  width: 140px;
   align-self: start;
 }
 
@@ -133,6 +197,8 @@ a {
 
 .more {
   border: 1px solid #d3d3d3;
+  margin: 1.5rem;
+  cursor: pointer;
 }
 .more span {
   padding: 0.2rem;
@@ -186,6 +252,13 @@ a {
   left: 0;
   top: 0;
   z-index: 0;
+  filter: contrast(2);
+}
+
+@media screen and (min-width: 576px) {
+  section:not(.vh100) {
+    min-height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

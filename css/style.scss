@@ -3,6 +3,7 @@ $df-r-orange: #f65441;
 $df-r-gray: #d3d3d3;
 $df-r-card: #373a41;
 $team-img-height: 95px;
+$team-img-width: 140px;
 
 @font-face {
     font-family: df-cocogoose;
@@ -60,6 +61,73 @@ a {
     text-decoration: inherit;
 }
 
+header {
+    z-index: 120;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 0.7rem;
+    #burger-container {
+        z-index: 130;
+        position: relative;
+        width: 22px;
+        margin-left: 0.7rem;
+        // margin-top: 0.8rem;
+        cursor: pointer;
+
+        .burger-line {
+            border-bottom: 4px solid #272a31;
+            margin-bottom: 0.24rem;
+            transition: all 0.5s;
+        }
+
+        .open {
+            transition: transform 1s;
+            &:nth-child(1) {
+                transform: rotate(45deg);
+                transform-origin: left;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: left;
+            }
+        }
+    }
+    nav {
+        transition: all 0.5s;
+        z-index: 110;
+        // display: none;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        background-color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 120vw;
+        a {
+            font-weight: 600;
+            font-size: 2rem;
+            white-space: nowrap;
+            margin-bottom: 1rem;
+        }
+    }
+    .ms-0 {
+        transition: all 1s;
+    }
+}
+
+footer > img {
+    width: 100px;
+    margin-right: 2rem;
+}
+
 .h2-wrapper {
     justify-content: center;
     display: flex;
@@ -78,7 +146,7 @@ a {
 
         &:nth-child(2) {
             left: 1rem;
-            top: 3rem;
+            top: 4rem;
         }
     }
 }
@@ -91,6 +159,7 @@ a {
         font-family: df-lato, sans-serif;
         background-color: $df-r-card;
         padding: 1rem 1.3rem;
+        height: 100%;
 
         h3 {
             color: $df-r-orange;
@@ -112,7 +181,7 @@ a {
     width: 50px;
     align-self: center;
     margin-top: 0.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .line-gray {
@@ -127,7 +196,7 @@ a {
     background-color: $df-r-orange;
     color: $df-r-gray;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .text-orange {
@@ -135,7 +204,8 @@ a {
 }
 
 .photo-team {
-    height: $team-img-height;
+    // height: $team-img-height;
+    width: $team-img-width;
     // padding: 0.8rem;
     align-self: start;
 }
@@ -150,6 +220,8 @@ a {
 
 .more {
     border: 1px solid $df-r-gray;
+    margin: 1.5rem;
+    cursor: pointer;
 
     span {
         padding: 0.2rem;
@@ -208,4 +280,11 @@ $arrow-border: 3px solid $df-r-orange;
     left: 0;
     top: 0;
     z-index: 0;
+    filter: contrast(2);
+}
+
+@media screen and (min-width: 576px) {
+    section:not(.vh100) {
+        min-height: auto;
+    }
 }
