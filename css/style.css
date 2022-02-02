@@ -4,8 +4,17 @@
 }
 
 @font-face {
+  font-family: df-cocogoose-italic;
+  src: url(./cocogoose/Cocogoose-Pro-Italic-trial.ttf);
+}
+
+@font-face {
   font-family: df-lato;
   src: url(./lato/Lato-Regular.ttf);
+}
+
+.font-coco {
+  font-family: sans-serif;
 }
 
 .bg-gray {
@@ -164,17 +173,17 @@ a:hover {
 }
 
 #welcome img {
-  max-width: 150px;
+  max-width: 100px;
   position: absolute;
 }
 
-#welcome img:nth-child(3) {
-  left: 1rem;
-  top: -9rem;
+#welcome img:nth-child(5) {
+  right: 1rem;
+  bottom: -4rem;
 }
 
 #welcome img:nth-child(4) {
-  bottom: -10rem;
+  top: -6rem;
   right: 1rem;
 }
 
@@ -319,14 +328,14 @@ a:hover {
 }
 
 @media screen and (min-width: 576px) {
-  #welcome img:nth-child(3) {
-    right: 9rem;
-    top: -6.5rem;
+  #welcome img:nth-child(5) {
+    right: 3rem;
+    bottom: 0;
     left: unset;
   }
 
   #welcome img:nth-child(4) {
-    bottom: -4rem;
+    top: -4rem;
     right: 1rem;
   }
 }

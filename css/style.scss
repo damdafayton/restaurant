@@ -12,8 +12,17 @@ $df-bg-gray: #ececec;
 }
 
 @font-face {
+  font-family: df-cocogoose-italic;
+  src: url(./cocogoose/Cocogoose-Pro-Italic-trial.ttf);
+}
+
+@font-face {
   font-family: df-lato;
   src: url(./lato/Lato-Regular.ttf);
+}
+
+.font-coco {
+  font-family: sans-serif;
 }
 
 .bg-gray {
@@ -176,16 +185,16 @@ a:hover {
 
 #welcome {
   img {
-    max-width: 150px;
+    max-width: 100px;
     position: absolute;
 
-    &:nth-child(3) {
-      left: 1rem;
-      top: -9rem;
+    &:nth-child(5) {
+      right: 1rem;
+      bottom: -4rem;
     }
 
     &:nth-child(4) {
-      bottom: -10rem;
+      top: -6rem;
       right: 1rem;
     }
   }
@@ -345,14 +354,15 @@ $arrow-border: 3px solid $df-r-orange;
 @media screen and (min-width: 576px) {
   #welcome {
     img {
-      &:nth-child(3) {
-        right: 9rem;
-        top: -6.5rem;
+      &:nth-child(5) {
+        right: 3rem;
+        bottom: 0;
         left: unset;
+        // max-width: 150px;
       }
 
       &:nth-child(4) {
-        bottom: -4rem;
+        top: -4rem;
         right: 1rem;
       }
     }
@@ -360,6 +370,12 @@ $arrow-border: 3px solid $df-r-orange;
 }
 
 @media screen and (min-width: 768px) {
+  // #welcome {
+  //   img {
+  //     max-width: 150px;
+  //   }
+  // }
+
   .navbar-padding-end {
     padding-right: 1rem;
   }
