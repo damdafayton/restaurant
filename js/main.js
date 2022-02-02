@@ -47,7 +47,7 @@ const isIndexPage = (document.location.pathname.includes('index.html') || !docum
 Object.keys(teamObj).forEach((member) => {
   const div = document.createElement('div');
   const details = `<div class="d-flex flex-column text-start">
-            <h3 class="fw-bold fs-4">${teamObj[member].name}</h3>
+            <h3 class="fw-bold fs-5">${teamObj[member].name}</h3>
             <p class="fw-bold">${teamObj[member].title}</p>
             <div class="line line-gray"></div>
             <p>${teamObj[member].description || ''}</p>

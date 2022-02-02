@@ -193,10 +193,18 @@ a:hover {
   width: 100%;
   top: 0;
   bottom: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   color: white;
   pointer-events: none;
   z-index: 1;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.text-in-image *,
+.img-reddish * {
+  margin-bottom: 0.2rem !important;
+  margin-top: 0 !important;
 }
 
 .text-in-image p,
