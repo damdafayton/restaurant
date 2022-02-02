@@ -3,9 +3,11 @@
 
 > BlaBla Restaurant Web Page
 
+
 ## Built With
 
-- HTML, SCSS, JS
+- HTML, CSS, JS
+- SCSS, Bootstrap
 
 
 ## Live Demo
@@ -37,6 +39,11 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+
+## Acknowledgement
+
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 
 ## 📝 License

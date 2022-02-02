@@ -6,7 +6,7 @@ body.firstElementChild.innerHTML = `
         <img src="./images/instagram-w.png">
         <img src="./images/twitter-w.png">
         </div>
-        <img src="./images/logo-food.png" alt="logo">
+        <a href="./index.html"><img src="./images/logo-food.png" alt="logo"></a>
         <div id="burger-container">
             <div class="burger-line"></div>
             <div class="burger-line"></div>

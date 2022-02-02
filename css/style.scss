@@ -63,6 +63,11 @@ a {
   text-decoration: inherit;
 }
 
+footer > img {
+  width: 100px;
+  margin-right: 2rem;
+}
+
 header {
   z-index: 120;
   position: fixed;
@@ -71,7 +76,7 @@ header {
   padding: 0.7rem;
 
   #navbar-topline,
-  > img {
+  a > img {
     display: none;
   }
 
@@ -136,11 +141,6 @@ header {
     margin-left: 0;
     // display: flex;
   }
-}
-
-footer > img {
-  width: 100px;
-  margin-right: 2rem;
 }
 
 a:hover {
@@ -325,7 +325,7 @@ $arrow-border: 3px solid $df-r-orange;
       display: none;
     }
 
-    > img {
+    a > img {
       display: inline;
       width: 70px;
       margin: 0.1rem 0.5rem;
