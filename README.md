@@ -1,26 +1,25 @@
-![](images.jfif)
+![](./images/ss-m.jpg)
 
 
-# Hello Project
+# BlaBla Restaurant Web Page
 
-> Title
-
-This project has no features.
+> Prototype of a restaurant web page
 
 
 ## Built With
 
-- HTML, CSS
+- HTML, CSS, JS
+- SCSS, Bootstrap
 
 
 ## Live Demo
 
-[Live Demo Link](https://)
+[Live Demo Link](https://damdafayton.github.io/restaurant/)
 
 
 ## Getting Started
 
-Download and click `index.html` if you really want to run this page.
+Download and click `index.html`.
 
 
 
@@ -44,9 +43,9 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 
-## Acknowledgments
+## Acknowledgement
 
-- Hat tip to all developers.
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 
 ## 📝 License

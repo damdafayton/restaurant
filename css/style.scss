@@ -1,0 +1,449 @@
+$df-r-black: #272a31;
+$df-r-orange: #f65441;
+$df-r-gray: #d3d3d3;
+$df-r-card: #373a41;
+$team-img-height: 95px;
+$team-img-width: 140px;
+$df-bg-gray: #ececec;
+
+@font-face {
+  font-family: df-cocogoose;
+  src: url(./cocogoose/letterpress/cocogoose-letterpress.regular.ttf);
+}
+
+@font-face {
+  font-family: df-cocogoose-italic;
+  src: url(./cocogoose/Cocogoose-Pro-Italic-trial.ttf);
+}
+
+@font-face {
+  font-family: df-lato;
+  src: url(./lato/Lato-Regular.ttf);
+}
+
+.font-coco {
+  font-family: sans-serif;
+}
+
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+.border-gray {
+  border: 1px solid $df-r-gray;
+}
+
+body {
+  font-family: df-lato, sans-serif;
+  text-align: center;
+  background-color: $df-bg-gray;
+}
+
+section {
+  padding: 2rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: df-cocogoose, sans-serif;
+  color: $df-r-orange;
+  text-align: start;
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+h2 {
+  font-family: df-cocogoose, sans-serif;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 500;
+  font-family: df-lato, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: $df-r-card;
+  text-decoration: inherit;
+}
+
+footer {
+  min-height: auto;
+  background-color: white;
+  color: $df-r-black;
+
+  > img {
+    height: 90px;
+    margin-right: 1rem;
+  }
+}
+
+header {
+  z-index: 120;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 0.7rem;
+
+  #navbar-topline,
+  a > img {
+    display: none;
+  }
+
+  #burger-container {
+    z-index: 130;
+    position: relative;
+    width: 22px;
+    margin-left: 0.7rem;
+    // margin-top: 0.8rem;
+    cursor: pointer;
+
+    .burger-line {
+      border-bottom: 4px solid #272a31;
+      margin-bottom: 0.24rem;
+      transition: all 0.5s;
+    }
+
+    .open {
+      transition: transform 1s;
+
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: left;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: left;
+      }
+    }
+  }
+
+  nav {
+    margin-left: 120vw;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: 110;
+    // display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+    a {
+      font-weight: 600;
+      font-size: 2rem;
+      white-space: nowrap;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .navbar-show {
+    transition: all 0.4s ease-out;
+    margin-left: 0;
+    // display: flex;
+  }
+}
+
+a:hover {
+  color: $df-r-orange;
+}
+
+.h2-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#partners {
+  background-color: $df-r-card;
+  min-height: unset;
+  margin-left: 0;
+
+  .h2-wrapper {
+    flex-basis: 100%;
+  }
+
+  img {
+    max-width: 150px;
+    height: max-content;
+  }
+}
+
+#welcome {
+  img {
+    max-width: 100px;
+    position: absolute;
+
+    &:nth-child(5) {
+      right: 1rem;
+      bottom: -6rem;
+    }
+
+    &:nth-child(4) {
+      top: -6rem;
+      right: 1rem;
+    }
+  }
+}
+
+.text-in-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  color: white;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 0.85rem;
+
+  * {
+    margin-bottom: 0.2rem !important;
+    margin-top: 0 !important;
+  }
+
+  p {
+    color: white !important;
+  }
+}
+
+.text-orange {
+  color: $df-r-orange;
+}
+
+.card-team {
+  p:nth-child(2) {
+    @extend .text-orange;
+  }
+}
+
+#menu {
+  color: $df-r-gray;
+  background-color: $df-r-black;
+
+  .card-menu {
+    font-family: df-lato, sans-serif;
+    background-color: $df-r-card;
+    padding: 1rem 1.3rem;
+    height: 100%;
+
+    h3 {
+      color: $df-r-orange;
+    }
+
+    p {
+      color: white;
+      margin: 0;
+    }
+  }
+}
+
+.menu-icons {
+  height: 50px;
+}
+
+.line {
+  border-top: 2px solid $df-r-orange;
+  width: 50px;
+  align-self: center;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.line-gray {
+  border-color: $df-r-gray;
+  align-self: start;
+  width: 30px;
+  margin: 0.7rem 0;
+}
+
+.btn-orange {
+  align-self: center;
+  background-color: $df-r-orange;
+  color: $df-r-gray;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.photo-team {
+  // height: $team-img-height;
+  width: $team-img-width;
+  // padding: 0.8rem;
+  align-self: start;
+}
+
+.team-bg {
+  position: absolute;
+  width: 80px;
+  right: 2rem;
+  top: 5rem;
+  display: none;
+}
+
+.more {
+  border: 1px solid $df-r-gray;
+  margin: 1.5rem;
+  cursor: pointer;
+
+  span {
+    padding: 0.2rem;
+    transform: rotate(45deg);
+    display: inline-block;
+    vertical-align: text-top;
+  }
+
+  &:hover {
+    background-color: $df-r-gray;
+  }
+}
+
+$arrow-border: 3px solid $df-r-orange;
+
+.arrow {
+  border-bottom: $arrow-border;
+  border-right: $arrow-border;
+}
+
+.img-reddish {
+  @extend .text-in-image;
+
+  background-color: red;
+  // height: $team-img-height;
+  z-index: 1;
+  opacity: 40%;
+  pointer-events: none;
+
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.img-sepia {
+  transition: transform 0s;
+  position: relative;
+  filter: sepia(100%);
+  cursor: pointer;
+  z-index: 0;
+
+  &:hover {
+    transition: transform 1s;
+    filter: none;
+    // transform: scale(2);
+    transform-origin: left;
+    z-index: 2 !important;
+  }
+}
+
+.img-chess {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  filter: contrast(2);
+}
+
+@media screen and (min-width: 576px) {
+  #welcome {
+    img {
+      &:nth-child(5) {
+        right: 3rem;
+        bottom: 0;
+        left: unset;
+        // max-width: 150px;
+      }
+
+      &:nth-child(4) {
+        top: -4rem;
+        right: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // #welcome {
+  //   img {
+  //     max-width: 150px;
+  //   }
+  // }
+
+  .navbar-padding-end {
+    padding-right: 1rem;
+  }
+
+  section:not(.vh100) {
+    min-height: auto;
+  }
+
+  footer {
+    background-color: #272a31;
+    color: #ececec;
+
+    img {
+      content: url("../images/logo-food-w.png");
+      margin-right: 2rem;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+
+    #burger-container {
+      display: none;
+    }
+
+    a > img {
+      display: inline;
+      width: 70px;
+      margin: 0.1rem 0.5rem;
+    }
+
+    #navbar-topline {
+      display: block;
+      background-color: $df-r-black;
+      color: white;
+      width: 100%;
+      text-align: end;
+
+      @extend .navbar-padding-end;
+
+      img {
+        height: 20px;
+        width: auto;
+      }
+    }
+
+    nav {
+      position: static;
+      transition: all 0s !important;
+      margin-left: 0;
+      height: auto;
+      flex-direction: row;
+      padding: 1rem;
+
+      a {
+        margin: 0 1rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

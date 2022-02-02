@@ -1,3 +1,4 @@
 test.md
-node_modules
-.bat-linter-fix.bat
+node_modules/
+ignore/
+*.bat*

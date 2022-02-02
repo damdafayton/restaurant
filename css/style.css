@@ -1,0 +1,414 @@
+@font-face {
+  font-family: df-cocogoose;
+  src: url(./cocogoose/letterpress/cocogoose-letterpress.regular.ttf);
+}
+
+@font-face {
+  font-family: df-cocogoose-italic;
+  src: url(./cocogoose/Cocogoose-Pro-Italic-trial.ttf);
+}
+
+@font-face {
+  font-family: df-lato;
+  src: url(./lato/Lato-Regular.ttf);
+}
+
+.font-coco {
+  font-family: sans-serif;
+}
+
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+.border-gray {
+  border: 1px solid #d3d3d3;
+}
+
+body {
+  font-family: df-lato, sans-serif;
+  text-align: center;
+  background-color: #ececec;
+}
+
+section {
+  padding: 2rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: df-cocogoose, sans-serif;
+  color: #f65441;
+  text-align: start;
+}
+
+h1 span {
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-family: df-cocogoose, sans-serif;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 500;
+  font-family: df-lato, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #373a41;
+  text-decoration: inherit;
+}
+
+footer {
+  min-height: auto;
+  background-color: white;
+  color: #272a31;
+}
+
+footer > img {
+  height: 90px;
+  margin-right: 1rem;
+}
+
+header {
+  z-index: 120;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 0.7rem;
+}
+
+header #navbar-topline,
+header a > img {
+  display: none;
+}
+
+header #burger-container {
+  z-index: 130;
+  position: relative;
+  width: 22px;
+  margin-left: 0.7rem;
+  cursor: pointer;
+}
+
+header #burger-container .burger-line {
+  border-bottom: 4px solid #272a31;
+  margin-bottom: 0.24rem;
+  transition: all 0.5s;
+}
+
+header #burger-container .open {
+  transition: transform 1s;
+}
+
+header #burger-container .open:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+header #burger-container .open:nth-child(2) {
+  opacity: 0;
+}
+
+header #burger-container .open:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: left;
+}
+
+header nav {
+  margin-left: 120vw;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: 110;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+header nav a {
+  font-weight: 600;
+  font-size: 2rem;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+header .navbar-show {
+  transition: all 0.4s ease-out;
+  margin-left: 0;
+}
+
+a:hover {
+  color: #f65441;
+}
+
+.h2-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#partners {
+  background-color: #373a41;
+  min-height: unset;
+  margin-left: 0;
+}
+
+#partners .h2-wrapper {
+  flex-basis: 100%;
+}
+
+#partners img {
+  max-width: 150px;
+  height: max-content;
+}
+
+#welcome img {
+  max-width: 100px;
+  position: absolute;
+}
+
+#welcome img:nth-child(5) {
+  right: 1rem;
+  bottom: -6rem;
+}
+
+#welcome img:nth-child(4) {
+  top: -6rem;
+  right: 1rem;
+}
+
+.text-in-image,
+.img-reddish {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  color: white;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.text-in-image *,
+.img-reddish * {
+  margin-bottom: 0.2rem !important;
+  margin-top: 0 !important;
+}
+
+.text-in-image p,
+.img-reddish p {
+  color: white !important;
+}
+
+.text-orange,
+.card-team p:nth-child(2) {
+  color: #f65441;
+}
+
+#menu {
+  color: #d3d3d3;
+  background-color: #272a31;
+}
+
+#menu .card-menu {
+  font-family: df-lato, sans-serif;
+  background-color: #373a41;
+  padding: 1rem 1.3rem;
+  height: 100%;
+}
+
+#menu .card-menu h3 {
+  color: #f65441;
+}
+
+#menu .card-menu p {
+  color: white;
+  margin: 0;
+}
+
+.menu-icons {
+  height: 50px;
+}
+
+.line {
+  border-top: 2px solid #f65441;
+  width: 50px;
+  align-self: center;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.line-gray {
+  border-color: #d3d3d3;
+  align-self: start;
+  width: 30px;
+  margin: 0.7rem 0;
+}
+
+.btn-orange {
+  align-self: center;
+  background-color: #f65441;
+  color: #d3d3d3;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.photo-team {
+  width: 140px;
+  align-self: start;
+}
+
+.team-bg {
+  position: absolute;
+  width: 80px;
+  right: 2rem;
+  top: 5rem;
+  display: none;
+}
+
+.more {
+  border: 1px solid #d3d3d3;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+.more span {
+  padding: 0.2rem;
+  transform: rotate(45deg);
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.more:hover {
+  background-color: #d3d3d3;
+}
+
+.arrow {
+  border-bottom: 3px solid #f65441;
+  border-right: 3px solid #f65441;
+}
+
+.img-reddish {
+  background-color: red;
+  z-index: 1;
+  opacity: 40%;
+  pointer-events: none;
+}
+
+.img-reddish:hover {
+  opacity: 0;
+}
+
+.img-sepia {
+  transition: transform 0s;
+  position: relative;
+  filter: sepia(100%);
+  cursor: pointer;
+  z-index: 0;
+}
+
+.img-sepia:hover {
+  transition: transform 1s;
+  filter: none;
+  transform-origin: left;
+  z-index: 2 !important;
+}
+
+.img-chess {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  filter: contrast(2);
+}
+
+@media screen and (min-width: 576px) {
+  #welcome img:nth-child(5) {
+    right: 3rem;
+    bottom: 0;
+    left: unset;
+  }
+
+  #welcome img:nth-child(4) {
+    top: -4rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-padding-end,
+  header #navbar-topline {
+    padding-right: 1rem;
+  }
+
+  section:not(.vh100) {
+    min-height: auto;
+  }
+
+  footer {
+    background-color: #272a31;
+    color: #ececec;
+  }
+
+  footer img {
+    content: url("../images/logo-food-w.png");
+    margin-right: 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  header #burger-container {
+    display: none;
+  }
+
+  header a > img {
+    display: inline;
+    width: 70px;
+    margin: 0.1rem 0.5rem;
+  }
+
+  header #navbar-topline {
+    display: block;
+    background-color: #272a31;
+    color: white;
+    width: 100%;
+    text-align: end;
+  }
+
+  header #navbar-topline img {
+    height: 20px;
+    width: auto;
+  }
+
+  header nav {
+    position: static;
+    transition: all 0s !important;
+    margin-left: 0;
+    height: auto;
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  header nav a {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+}
