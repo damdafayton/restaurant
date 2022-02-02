@@ -1,7 +1,9 @@
 ![](./images/ss-m.jpg)
 
 
-> BlaBla Restaurant Web Page
+# BlaBla Restaurant Web Page
+
+> Prototype of a restaurant web page
 
 
 ## Built With

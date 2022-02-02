@@ -40,7 +40,7 @@ section {
 h1 {
   font-family: df-cocogoose, sans-serif;
   color: $df-r-orange;
-  text-align: center;
+  text-align: start;
 
   span {
     font-size: 0.9rem;
@@ -63,9 +63,15 @@ a {
   text-decoration: inherit;
 }
 
-footer > img {
-  width: 100px;
-  margin-right: 2rem;
+footer {
+  background-color: #272a31;
+  min-height: auto;
+  color: #ececec;
+
+  > img {
+    height: 90px;
+    margin-right: 1rem;
+  }
 }
 
 header {
@@ -153,6 +159,21 @@ a:hover {
   flex-direction: column;
 }
 
+#partners {
+  background-color: $df-r-card;
+  min-height: unset;
+  margin-left: 0;
+
+  .h2-wrapper {
+    flex-basis: 100%;
+  }
+
+  img {
+    max-width: 150px;
+    height: max-content;
+  }
+}
+
 #welcome {
   img {
     max-width: 150px;
@@ -160,13 +181,38 @@ a:hover {
 
     &:nth-child(3) {
       left: 1rem;
-      bottom: 9rem;
+      top: -9rem;
     }
 
     &:nth-child(4) {
-      top: 9rem;
+      bottom: -10rem;
       right: 1rem;
     }
+  }
+}
+
+.text-in-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding: 1.5rem;
+  color: white;
+  pointer-events: none;
+  z-index: 1;
+
+  p {
+    color: white !important;
+  }
+}
+
+.text-orange {
+  color: $df-r-orange;
+}
+
+.card-team {
+  p:nth-child(2) {
+    @extend .text-orange;
   }
 }
 
@@ -200,7 +246,7 @@ a:hover {
   width: 50px;
   align-self: center;
   margin-top: 0.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .line-gray {
@@ -216,10 +262,6 @@ a:hover {
   color: $df-r-gray;
   padding: 1rem;
   margin: 1.5rem;
-}
-
-.text-orange {
-  color: $df-r-orange;
 }
 
 .photo-team {
@@ -261,18 +303,12 @@ $arrow-border: 3px solid $df-r-orange;
   border-right: $arrow-border;
 }
 
-.copyright {
-  background-color: white;
-  min-height: auto;
-}
-
 .img-reddish {
-  position: absolute;
+  @extend .text-in-image;
+
   background-color: red;
-  width: 100%;
-  height: $team-img-height;
+  // height: $team-img-height;
   z-index: 1;
-  top: 0;
   opacity: 40%;
   pointer-events: none;
 
@@ -291,7 +327,7 @@ $arrow-border: 3px solid $df-r-orange;
   &:hover {
     transition: transform 1s;
     filter: none;
-    transform: scale(2);
+    // transform: scale(2);
     transform-origin: left;
     z-index: 2 !important;
   }
@@ -306,6 +342,23 @@ $arrow-border: 3px solid $df-r-orange;
   filter: contrast(2);
 }
 
+@media screen and (min-width: 576px) {
+  #welcome {
+    img {
+      &:nth-child(3) {
+        right: 9rem;
+        top: -6.5rem;
+        left: unset;
+      }
+
+      &:nth-child(4) {
+        bottom: -4rem;
+        right: 1rem;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navbar-padding-end {
     padding-right: 1rem;
@@ -313,6 +366,16 @@ $arrow-border: 3px solid $df-r-orange;
 
   section:not(.vh100) {
     min-height: auto;
+  }
+
+  footer {
+    background-color: white;
+    color: $df-r-black;
+
+    img {
+      content: url("../images/logo-food.png");
+      margin-right: 2rem;
+    }
   }
 
   header {
