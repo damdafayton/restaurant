@@ -52,7 +52,7 @@ Object.keys(teamObj).forEach((member) => {
             <div class="line line-gray"></div>
             <p>${teamObj[member].description || ''}</p>
         </div>`;
-  div.innerHTML = `<div class="p-3 position-relative">
+  div.innerHTML = `<div class="p-2 position-relative">
         ${isIndexPage ? '<img class="img-chess" src="./images/chess.png">' : ''}
         <div class="position-relative">
             <img class="photo-team" src="${teamObj[member].image}" alt="photo of owner">
@@ -61,7 +61,7 @@ Object.keys(teamObj).forEach((member) => {
         </div>
         </div>
         ${isIndexPage ? details : ''}`;
-  div.classList.add('card-team', 'd-flex', 'gap-2', 'justify-content-center', 'col');
+  div.classList.add('card-team', 'd-flex', 'gap-1', 'justify-content-center', 'col', 'px-0');
   if (team) { team.appendChild(div); }
 });
 
