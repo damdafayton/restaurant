@@ -132,7 +132,7 @@ header {
   }
 
   .navbar-show {
-    transition: all 0.5s;
+    transition: all 0.4s ease-out;
     margin-left: 0;
     // display: flex;
   }
