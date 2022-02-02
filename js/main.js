@@ -41,7 +41,7 @@ const teamObj = {
 };
 
 const team = document.querySelector('#team-members');
-const isIndexPage = document.location.pathname.includes('index.html');
+const isIndexPage = (document.location.pathname.includes('index.html') || !document.location.pathname.includes('.html'));
 
 // Add team members to section
 Object.keys(teamObj).forEach((member) => {
