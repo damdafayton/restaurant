@@ -73,9 +73,9 @@ a {
 }
 
 footer {
-  background-color: #272a31;
   min-height: auto;
-  color: #ececec;
+  background-color: white;
+  color: $df-r-black;
 
   > img {
     height: 90px;
@@ -392,11 +392,11 @@ $arrow-border: 3px solid $df-r-orange;
   }
 
   footer {
-    background-color: white;
-    color: $df-r-black;
+    background-color: #272a31;
+    color: #ececec;
 
     img {
-      content: url("../images/logo-food.png");
+      content: url("../images/logo-food-w.png");
       margin-right: 2rem;
     }
   }

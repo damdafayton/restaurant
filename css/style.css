@@ -65,9 +65,9 @@ a {
 }
 
 footer {
-  background-color: #272a31;
   min-height: auto;
-  color: #ececec;
+  background-color: white;
+  color: #272a31;
 }
 
 footer > img {
@@ -359,12 +359,12 @@ a:hover {
   }
 
   footer {
-    background-color: white;
-    color: #272a31;
+    background-color: #272a31;
+    color: #ececec;
   }
 
   footer img {
-    content: url("../images/logo-food.png");
+    content: url("../images/logo-food-w.png");
     margin-right: 2rem;
   }
 
